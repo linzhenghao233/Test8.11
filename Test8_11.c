@@ -15,7 +15,34 @@
 
 //2.
 int main(void) {
+	int ch, count;
+	count = 0;
 
+	printf("输入一段字符，程序会返回其对应的十进制ASCII码：\n");
+	while ((ch = getchar()) != EOF) {
+		if (ch == '\n') {
+			printf("\\n:%d\t", ch);
+			count++;
+			if (count % 10 == 0)
+				printf("\n");
+			continue;
+		}
+		else if (ch == '\t') {
+			printf("\\t:%d\t", ch);
+			count++;
+			if (count % 10 == 0)
+				printf("\n");
+			continue;
+		}
+
+		putchar(ch);
+		printf(":%d\t", ch);
+
+		count++;
+		if (count % 10 == 0) {
+			printf("\n");
+		}
+	}
 
 	return 0;
 }
