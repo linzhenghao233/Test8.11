@@ -69,27 +69,60 @@
 //}
 
 //4.
-int main(void) {
-	int ch, word, count;
-	word = count = 0;
+//int main(void) {
+//	int ch, word, count;
+//	word = count = 0;
+//
+//	printf("用英语输入一段话：");
+//	while ((ch = getchar()) != EOF) {
+//		if (ch == ' ') {
+//			word++;
+//			continue;
+//		}
+//		else if (ispunct(ch)) {
+//			continue;
+//		}
+//		else if (ch == '\n') {
+//			word++;
+//			break;
+//		}
+//		else if(isalpha(ch)){
+//			count++;
+//		}
+//	}
+//	printf("单词数：%d，字母数：%d，平均每个单词的字符数%0.2f", word, count, (float)count / word);
+//
+//	return 0;
+//}
 
-	while ((ch = getchar()) != EOF) {
-		if (ch == ' ') {
-			word++;
-			continue;
-		}
-		else if (ispunct(ch)) {
-			continue;
-		}
-		else if (ch == '\n') {
-			word++;
-			break;
-		}
-		else if(isalpha(ch)){
-			count++;
-		}
-	}
-	printf("单词数：%d，字母数：%d，平均每个单词的字符数%0.2f", word, count, (float)count / word);
+//5.
+//int main(void) {
+//	char ch;
+//	int guess, min, max;
+//	guess = 50, min = 1, max = 100;
+//
+//	printf("想一个1-100的整数，让程序猜测这个数字，猜大了回复big，猜小了回复small，猜对了回复yes。\n");
+//	printf("我先猜是%d\n", guess);
+//	while ((ch = getchar()) != 'y') {
+//		printf("emmm那就是");
+//		if (ch == 'b') {
+//			max = guess;
+//			guess = (min + max) / 2;
+//			printf("%d\n", guess);
+//		}
+//		else if (ch == 's') {
+//			min = guess;
+//			guess = (min + max) / 2;
+//			printf("%d\n", guess);
+//		}
+//		else
+//			printf("请输入正确的单词！");
+//		while ((ch = getchar()) != '\n')
+//			continue;
+//	}
+//	printf("好耶！你想的数是%d", guess);
+//
+//	return 0;
+//}
 
-	return 0;
-}
+//6.
